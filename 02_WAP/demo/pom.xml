@@ -14,8 +14,8 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.7</maven.compiler.source>
-    <maven.compiler.target>1.7</maven.compiler.target>
+    <maven.compiler.source>3.9.5</maven.compiler.source>
+    <maven.compiler.target>3.9.5</maven.compiler.target>
   </properties>
 
   <dependencies>
@@ -32,17 +32,17 @@
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.8.0</version>
+            <version>3.11.0</version>
              <configuration>
                 <release>11</release>
                 <fork>true</fork>
-                <executable>C:\Program Files\Eclipse Adoptium\jdk-11.0.14.9-hotspot\bin\javac</executable>
+                <executable>C:\Program Files\Java\jdk-17\bin\javac</executable>
             </configuration>
         </plugin>
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-shade-plugin</artifactId>
-            <version>1.7.1</version>
+            <version>3.5.1</version>
             <executions>
                 <execution>
                     <phase>package</phase>
@@ -64,7 +64,7 @@
         <plugin>
             <groupId>com.akathist.maven.plugins.launch4j</groupId>
             <artifactId>launch4j-maven-plugin</artifactId>
-            <version>1.7.25</version>
+            <version>2.4.1</version>
             <executions>
                 <execution>
                     <id>l4j-clui</id>
@@ -84,7 +84,7 @@
                         
                         <jre>
                             <minVersion>11.0.1</minVersion>
-                            
+                            <path>C:\Program Files\Java\jdk-17</path>
                         </jre>
                         <versionInfo>
                             <fileVersion>1.0.0.0</fileVersion>
