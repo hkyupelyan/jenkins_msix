@@ -43,7 +43,7 @@ pipeline {
       stage('Build MSIX package') {
         steps {
                   bat '''
-                    "C:\\Program Files (x86)\\VB6VirtualRegistry\\Vb6VirtualRegistry.exe" %-- pack "C:\\Users\\luisdem\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\Manual MSIX Packaging\\03_VB6RegistryTool\\msix_files" "C:\\Users\\luisdem\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\Manual MSIX Packaging\\03_VB6RegistryTool\\myjava_%BUILD_NUMBER%.msix"
+                    "C:\\Program Files (x86)\\VB6VirtualRegistry\\Vb6VirtualRegistry.exe" %-- pack "C:\\Users\\Harry Kyupelyan\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\Manual MSIX Packaging\\03_VB6RegistryTool\\msix_files" "C:\\Users\\luisdem\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\Manual MSIX Packaging\\03_VB6RegistryTool\\myjava_%BUILD_NUMBER%.msix"
                     '''
             }
             post{
